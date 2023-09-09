@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentTeamOrder"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+   <com.google.android.material.button.MaterialButtonToggleGroup
+       android:id="@+id/toggleButton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+      <Button
+          style="materialButtonOutlinedStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/ascBT"
+          android:text="Asc"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          android:textStyle="bold"/>
+      <Button
+          style="materialButtonOutlinedStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/descBT"
+          android:text="DESC"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          android:textStyle="bold"/>
+   </com.google.android.material.button.MaterialButtonToggleGroup>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/recycler"/>
+
+</LinearLayout>

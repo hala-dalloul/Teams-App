@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Team_Player" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Team_Player" parent="Base.Theme.Team_Player" >
+        <item name="android:colorPrimary"> @color/blue</item>
+        <item name="android:colorButtonNormal"> @color/blue</item>
+        <item name="colorOnPrimary">#B2DDFF</item>
+        <item name="colorPrimaryVariant">#0081E9</item>
+        <item name="android:colorError"> @color/red</item>
+        <item name="android:colorSecondary"> @color/white_blue</item>
+        <item name="colorPrimary">#008DFE</item>
+    </style>
+</resources>
