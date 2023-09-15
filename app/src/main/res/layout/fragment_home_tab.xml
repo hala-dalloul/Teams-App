@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentHome_Tab">
+
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabBarHome"
         android:layout_width="match_parent"

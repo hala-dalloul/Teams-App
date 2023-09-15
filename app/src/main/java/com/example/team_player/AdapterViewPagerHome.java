@@ -14,6 +14,7 @@ public class AdapterViewPagerHome extends FragmentStateAdapter {
     public void setFragments(List<Fragment> fragments) {
         this.fragments = fragments;
         notifyDataSetChanged();
+
     }
 
     public AdapterViewPagerHome(@NonNull FragmentActivity fragmentActivity, List<Fragment> fragments) {

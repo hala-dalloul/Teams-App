@@ -25,6 +25,8 @@ public class FragmentTeamOrder extends Fragment implements AdapterTeamEvaluated.
         // Required empty public constructor
     }
 
+
+
     public static FragmentTeamOrder newInstance(String param1, String param2) {
         FragmentTeamOrder fragment = new FragmentTeamOrder();
         Bundle args = new Bundle();

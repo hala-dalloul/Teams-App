@@ -4,6 +4,7 @@ plugins {
     id 'com.android.library' version '8.0.2' apply false
 }
 ext {
+
     appCompatVersion = '1.5.1'
     constraintLayoutVersion = '2.1.4'
     coreTestingVersion = '2.1.0'

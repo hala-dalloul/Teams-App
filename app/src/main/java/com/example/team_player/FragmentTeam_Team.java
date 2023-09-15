@@ -62,6 +62,8 @@ public class FragmentTeam_Team extends Fragment {
                 binding.edCups.setText(null);
             }
 
+
+
         });
 
         return binding.getRoot();

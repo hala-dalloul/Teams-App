@@ -143,6 +143,7 @@ public class FragmentTeam_Player extends Fragment implements AdapterSelectedTeam
         return binding.getRoot();
     }
 
+
     @Override
     public void clickedTeam(int id) {
         idTeam= teams.get(id-1).getId();

@@ -45,6 +45,8 @@ public class FragmentAdd extends Fragment {
         FragmentAddBinding binding =FragmentAddBinding.inflate
                 (inflater, container, false);
 
+
+
         ArrayList<String> tabs=new ArrayList<>();
         tabs.add("Player");
         tabs.add("Team");

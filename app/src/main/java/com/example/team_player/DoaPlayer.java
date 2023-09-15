@@ -19,6 +19,8 @@ public interface DoaPlayer {
     @Query("SELECT * FROM Player")
     LiveData<List<Player >> getAllPlayers();
 
+
+
     @Query("select * from Player where name=:name ")
     LiveData<Player> getPlayerByName(String name);
 

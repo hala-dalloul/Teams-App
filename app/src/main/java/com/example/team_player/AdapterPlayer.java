@@ -15,6 +15,8 @@ import java.util.List;
 public class AdapterPlayer extends RecyclerView.Adapter<AdapterPlayer.ViewHolderPlayer> {
     List<Player> players;
 
+
+
     public AdapterPlayer(List<Player> players) {
         this.players = players;
         notifyDataSetChanged();

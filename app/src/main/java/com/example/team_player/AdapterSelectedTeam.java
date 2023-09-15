@@ -21,6 +21,7 @@ public class AdapterSelectedTeam extends RecyclerView.Adapter<AdapterSelectedTea
         notifyDataSetChanged();
     }
 
+
     public AdapterSelectedTeam(List<Team> teams, ClickedTeam clickedTeam) {
         this.teams = teams;
         this.clickedTeam = clickedTeam;

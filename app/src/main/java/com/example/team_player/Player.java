@@ -22,6 +22,8 @@ public class Player {
     private Date dateOfBirth;
     private int idTeam;
 
+
+
     public Player( String name, int shirtNumber, Bitmap photo, Date dateOfBirth, int idTeam) {
         this.name = name;
         this.shirtNumber = shirtNumber;

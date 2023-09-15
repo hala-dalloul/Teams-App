@@ -4,6 +4,8 @@
     android:layout_height="wrap_content"
     android:background="@drawable/shap_card_player"
     android:padding="10dp">
+
+
     <TextView
         android:id="@+id/tvName"
         android:layout_width="150dp"

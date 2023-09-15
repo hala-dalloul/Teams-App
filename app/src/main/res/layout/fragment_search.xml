@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".FragmentSearch">
 
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField"
         android:layout_width="match_parent"

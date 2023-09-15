@@ -10,6 +10,8 @@ import java.util.Date;
 
 public class Switch {
 
+
+
     @TypeConverter
     public Long toLong (Date date){
         return date.getTime();

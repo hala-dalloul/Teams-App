@@ -13,6 +13,7 @@ public class AdapterViePagerAdd extends FragmentStateAdapter {
     public AdapterViePagerAdd(@NonNull FragmentActivity fragmentActivity,List<Fragment> fragments) {
         super(fragmentActivity);
         this.fragments=fragments;
+
     }
 
     @NonNull

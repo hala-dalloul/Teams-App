@@ -15,6 +15,8 @@ public class Team {
   private String name;
   private int numberOfCups;
 
+
+
     public Team(String name, int numberOfCups) {
         this.name = name;
         this.numberOfCups = numberOfCups;

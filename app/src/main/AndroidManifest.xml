@@ -11,6 +11,7 @@
         android:roundIcon="@drawable/baseline_settings_accessibility_24"
         android:supportsRtl="true"
         android:theme="@style/Theme.Team_Player"
+
         tools:targetApi="31">
         <activity
             android:name=".ActivityTeams"

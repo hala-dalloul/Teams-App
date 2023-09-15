@@ -78,6 +78,8 @@ public class ActivityTeams extends AppCompatActivity implements FragmentTeam_Tea
         vm.insertPlayer(new Player(name, shirtNumber, bitmap, date, idTeam));
     }
 
+
+
     @Override
     public void getTheDialog(String title) {
         fragmentDialogAddAction=FragmentDialogAddAction.newInstance(title);

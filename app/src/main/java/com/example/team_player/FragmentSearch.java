@@ -56,6 +56,8 @@ public class FragmentSearch extends Fragment {
                          String date = d.getYear() + "/" + d.getMonth() + "/" + d.getDay();
                          binding.playerName.setText(player.getName());
                          binding.playerBOD.setText(date);
+
+
                          binding.playerShirtNum.setText(String.valueOf(player.getShirtNumber()));
                          int id = player.getIdTeam();
                          vm.getTeamName(id).observe(getActivity(), new Observer<String>() {

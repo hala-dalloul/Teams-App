@@ -7,6 +7,9 @@
     android:layout_margin="10dp"
     android:paddingHorizontal="20dp"
     android:gravity="center">
+
+
+
     <TextView
         android:id="@+id/tvNameT"
         android:layout_width="wrap_content"

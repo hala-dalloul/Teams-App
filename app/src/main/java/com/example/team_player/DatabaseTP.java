@@ -11,6 +11,8 @@ import java.util.concurrent.Executors;
 
 @Database(entities = {Player.class, Team.class},version = 1)
 public abstract class DatabaseTP extends RoomDatabase {
+
+
     public abstract DoaPlayer playerDao();
     public abstract DoaTeam teamDao();
 

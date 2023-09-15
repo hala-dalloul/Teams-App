@@ -18,7 +18,6 @@ public class AdapterTeamEvaluated extends RecyclerView.Adapter<AdapterTeamEvalua
 
     List<Team> teams;
     Show show;
-
     @Ignore
     public AdapterTeamEvaluated(List<Team> teams, Show show) {
         this.teams = teams;
@@ -38,6 +37,7 @@ public class AdapterTeamEvaluated extends RecyclerView.Adapter<AdapterTeamEvalua
     @Override
     public ViewHolderTeamE onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         RecyclerTeamEvaluatedBinding binding=RecyclerTeamEvaluatedBinding.inflate
+
                 (LayoutInflater.from(parent.getContext()),parent,false);
         return new ViewHolderTeamE(binding);
     }
@@ -62,6 +62,8 @@ public class AdapterTeamEvaluated extends RecyclerView.Adapter<AdapterTeamEvalua
             super(binding.getRoot());
                 this.tvName=binding.tvNameT;
                 this.starBT=binding.starBT;
+
+
         }
     }
     interface Show{

@@ -24,6 +24,8 @@ public interface DoaTeam {
     @Query("select name from Team where id=:id")
     LiveData<String> getTeamName(int id);
 
+
+
     @Query("select name from Team ")
     LiveData<List<String>> getAllTeamName();
 

@@ -22,12 +22,12 @@ public class ViewModel extends AndroidViewModel {
     void insertTeam(Team team) {
         repo.insertTeam(team);
     }
-    void deleteTeam(Team team) {
-        repo.deleteTeam(team);
-    }
-    void updateTeam(Team team) {
-        repo.updateTeam(team);
-    }
+//    void deleteTeam(Team team) {
+//        repo.deleteTeam(team);
+//    }
+//    void updateTeam(Team team) {
+//        repo.updateTeam(team);
+//    }
     LiveData<List<Team>> getAllTeams(){
         return repo.getAllTeams();
     }
@@ -47,12 +47,12 @@ public class ViewModel extends AndroidViewModel {
     }
 
     void insertPlayer(Player player){repo.insertPlayer(player);}
-    void updatePlayer(Player player){
-        repo.updatePlayer(player);
-    }
-    void deletePlayer(Player player){
-        repo.deletePlayer(player);
-    }
+//    void updatePlayer(Player player){
+//        repo.updatePlayer(player);
+//    }
+//    void deletePlayer(Player player){
+//        repo.deletePlayer(player);
+//    }
     LiveData<List<Player>> getAllPlayer(){
         return repo.getAllPlayer();
     }

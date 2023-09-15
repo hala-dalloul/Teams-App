@@ -63,6 +63,8 @@ public class FragmentHome_Tab extends Fragment {
                        adapterVP=new AdapterViewPagerHome(getActivity(),fragments);
                        adapterVP.setFragments(fragments);
                        binding.vpHome.setAdapter(adapterVP);
+
+
                        new TabLayoutMediator(binding.tabBarHome, binding.vpHome
                                , new TabLayoutMediator.TabConfigurationStrategy() {
                            @Override

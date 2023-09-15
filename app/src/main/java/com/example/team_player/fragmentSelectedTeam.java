@@ -55,6 +55,7 @@ public class fragmentSelectedTeam extends Fragment {
                              Bundle savedInstanceState) {
         FragmentSelectedTeamBinding binding=FragmentSelectedTeamBinding.inflate
                 (inflater, container, false);
+        binding.tv.setVisibility(View.INVISIBLE);
         Log.d("TAG11", "onCreateView: "+id);
         players=new ArrayList<>();
         adapterPlayer=new AdapterPlayer(players);
@@ -63,12 +64,20 @@ public class fragmentSelectedTeam extends Fragment {
         vm.getPlayersByTeamId(id).observe(getActivity(), new Observer<List<Player>>() {
             @Override
             public void onChanged(List<Player> players1) {
-                players=players1;
-                adapterPlayer.setPlayers(players1);
-                binding.recyclerPlayer.setLayoutManager(new LinearLayoutManager(getContext()));
-                binding.recyclerPlayer.setAdapter(adapterPlayer);
-            }
+
+                    players=players1;
+                    adapterPlayer.setPlayers(players1);
+                    binding.recyclerPlayer.setLayoutManager(new LinearLayoutManager(getContext()));
+                    binding.recyclerPlayer.setAdapter(adapterPlayer);
+                    if(players.size()==0)
+                        binding.tv.setVisibility(View.VISIBLE);
+                }
+
+
+
         });
+
+
 
         return binding.getRoot();
     }
