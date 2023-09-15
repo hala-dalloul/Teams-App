@@ -86,7 +86,7 @@ public class ActivityTeams extends AppCompatActivity implements FragmentTeam_Tea
 
     @Override
     public void done(boolean ok) {
-        if(ok) {
+        if (ok) {
             FragmentTransaction transaction1 = manager.beginTransaction();
             transaction1.replace(R.id.fragment, new FragmentHome_Tab()).commit();
             transaction1.addToBackStack("home");
@@ -94,20 +94,15 @@ public class ActivityTeams extends AppCompatActivity implements FragmentTeam_Tea
             fragmentDialogAddAction.dismiss();
 
         }
-
-
-
     }
-
     @Override
     public void showNumberOfCups(int id) {
         vm.getTeam(id).observe(this,team -> {
             t=team;
             if(t!=null){
                 numberOfCups=t.getNumberOfCups();
+                Toast.makeText(this, numberOfCups+"", Toast.LENGTH_SHORT).show();
             }
         });
-        Toast.makeText(this, numberOfCups+"", Toast.LENGTH_SHORT).show();
-
     }
 }

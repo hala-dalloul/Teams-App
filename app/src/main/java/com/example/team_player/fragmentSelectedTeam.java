@@ -55,7 +55,6 @@ public class fragmentSelectedTeam extends Fragment {
                              Bundle savedInstanceState) {
         FragmentSelectedTeamBinding binding=FragmentSelectedTeamBinding.inflate
                 (inflater, container, false);
-
         Log.d("TAG11", "onCreateView: "+id);
         players=new ArrayList<>();
         adapterPlayer=new AdapterPlayer(players);

@@ -36,8 +36,7 @@ public class FragmentHome_Tab extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-        }
+
     }
     ViewModel vm;
     List<String> teamName =new ArrayList<>();
@@ -56,10 +55,10 @@ public class FragmentHome_Tab extends Fragment {
                vm.getAllTeams().observe(getActivity(), new Observer<List<Team>>() {
                    @Override
                    public void onChanged(List<Team> teams) {
-
                        for (int i = 0; i < strings.size(); i++) {
-                           fragments.add(fragmentSelectedTeam.newInstance
-                                   (teams.get(i).getId()));
+                           if(strings.size()>fragments.size())
+                                       fragments.add(fragmentSelectedTeam.newInstance
+                                                   (teams.get(i).getId()));
                        }
                        adapterVP=new AdapterViewPagerHome(getActivity(),fragments);
                        adapterVP.setFragments(fragments);
